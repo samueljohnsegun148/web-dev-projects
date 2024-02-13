@@ -96,16 +96,26 @@ let confirmPunctuationChar;
 let randomValue;
 
   // function to get password options
-  function getPasswordOptions() {
+function getPasswordOptions() {
     promptPasswordLenght =  prompt("What is your preferred password lenght?");
     if (promptPasswordLenght >= 8 && promptPasswordLenght <= 128){
         confirmUpperCase = confirm("Would you like your password to include uppercase characters?");
         confirmLowerCase = confirm("Would you like your password to include lowercase characters?");
         confirmNumericChar = confirm("Would you like your password to include numeric characters?");
         confirmPunctuationChar = confirm("Would you like your password to include punctuation characters?");
-  } else {
-    getPasswordOptions();
-  }
+    } else {
+        getPasswordOptions();
+    }
+
+ 
+
+    // check if at least one character type is selected
+    if (confirmUpperCase || confirmLowerCase || confirmNumericChar || confirmPunctuationChar) {
+      generatePassword ();
+    } else {
+        alert("Your password must include at least one of the four character types!");
+        getPasswordOptions();
+    }
 }
 
   // function to get random number
@@ -117,6 +127,7 @@ let randomValue;
 // function to generate password based on user criteria 
 
 function generatePassword () {
+    
      
 
 }
