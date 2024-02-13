@@ -111,7 +111,7 @@ img {
     background-image: url("./img/background-image2.jpg");
     background-repeat: repeat;
 }
-.new-projects > p, a {
+.new-projects > p {
     background-color: var(--mycolor);
     width:120px; 
     
@@ -140,31 +140,12 @@ img {
     border-right: 2px solid red;
       
 }
-/*
-#my-work {
-  display: grid;  
-  grid-template-columns: auto auto;
-  background-color: rgb(223, 216, 216);
-  background-image: url("./img/background-image2.jpg");
-  background-repeat: repeat;
-  margin-bottom: 30px;
-  padding-top: 50px;
-  border: 4px solid lightblue;  
-}
 
-.project { 
-    border: 4px solid var(--mycolor);
-    padding-bottom: 50px;
-    padding-top: 50px;
-}
-*/
 .project > p {
     background-color: var(--mycolor);
     width:120px; 
 }
  
-
-
 #my-contact {
    display: flex;
    font-size: large;
