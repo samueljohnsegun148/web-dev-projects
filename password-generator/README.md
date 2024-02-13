@@ -30,5 +30,7 @@ This web app generates a password when the button is clicked. The user receives 
 Once the criteria are fulfilled, the password would be generated and displayed on the page for the user.
 
 ## Links
+
 'This site is built using [GitHub Pages](https://samueljohnsegun148.github.io/web-dev-projects/password-generator/index.html).'
+
 
