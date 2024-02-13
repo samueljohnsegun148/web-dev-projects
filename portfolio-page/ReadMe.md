@@ -1,0 +1,1 @@
+This directory contains the portfolio rebuild of my website.
