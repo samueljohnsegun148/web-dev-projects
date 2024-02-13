@@ -103,7 +103,8 @@ function getPasswordOptions() {
         preferLowerCase = confirm("Would you like your password to include lowercase characters?");
         preferNumericChar = confirm("Would you like your password to include numeric characters?");
         preferSpecialChar = confirm("Would you like your password to include special characters?");
-    } else {
+    } 
+    else {
         alert("Invalid password lenght! Value must be from 8 - 128 !");
         getPasswordOptions();
     }
