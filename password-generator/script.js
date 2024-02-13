@@ -89,28 +89,28 @@ var specialCharacters = [
   ];
 // declare variables for the script
 let promptPasswordLenght;
-let confirmUpperCase
-let confirmLowerCase;
-let confirmNumericChar;
-let confirmPunctuationChar;
+let preferUpperCase
+let preferLowerCase;
+let preferNumericChar;
+let preferSpecialChar;
 let randomValue;
+let password = ""
 
-  // function to get password options
+// function to get password options
 function getPasswordOptions() {
     promptPasswordLenght =  prompt("What is your preferred password lenght?");
     if (promptPasswordLenght >= 8 && promptPasswordLenght <= 128){
-        confirmUpperCase = confirm("Would you like your password to include uppercase characters?");
-        confirmLowerCase = confirm("Would you like your password to include lowercase characters?");
-        confirmNumericChar = confirm("Would you like your password to include numeric characters?");
-        confirmPunctuationChar = confirm("Would you like your password to include punctuation characters?");
+        preferUpperCase = confirm("Would you like your password to include uppercase characters?");
+        preferLowerCase = confirm("Would you like your password to include lowercase characters?");
+        preferNumericChar = confirm("Would you like your password to include numeric characters?");
+        preferSpecialChar = confirm("Would you like your password to include punctuation characters?");
     } else {
+        
         getPasswordOptions();
     }
 
- 
-
     // check if at least one character type is selected
-    if (confirmUpperCase || confirmLowerCase || confirmNumericChar || confirmPunctuationChar) {
+    if (preferUpperCase || preferLowerCase || preferNumericChar || preferSpecialChar) {
       generatePassword ();
     } else {
         alert("Your password must include at least one of the four character types!");
@@ -118,19 +118,30 @@ function getPasswordOptions() {
     }
 }
 
-  // function to get random number
- function getRandom(arr){
-    randomValue = Math.floor(Math.random() * (arr.length - 1));
+// function to get random number
+function getRandom(arr){
+    randomValue = Math.floor(Math.random() * (arr.length));
     return randomValue;
  }
 
 // function to generate password based on user criteria 
-
 function generatePassword () {
-    
-     
-
+    for (let i = 0; i < promptPasswordLenght; i++) {
+        if (preferUpperCase && password.length < promptPasswordLenght) {
+            password += upperCasedCharacters[getRandom(upperCasedCharacters)];
+        }
+        if (preferLowerCase && password.length < promptPasswordLenght) {
+            password += lowerCasedCharacters[getRandom(lowerCasedCharacters)];
+        }
+        if (preferNumericChar && password.length < promptPasswordLenght) {
+            password += numericCharacters[getRandom(numericCharacters)];
+        }
+        if (preferSpecialChar && password.length < promptPasswordLenght) {
+            password += specialCharacters[getRandom(specialCharacters)];
+        }
+    }   
 }
 
 getPasswordOptions();
+console.log(password)
  
