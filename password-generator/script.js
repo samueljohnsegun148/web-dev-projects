@@ -87,4 +87,19 @@ var specialCharacters = [
     'Y',
     'Z'
   ];
+// declare variables for the script
+let promptPasswordLenght;
+let confirmUpperCase
+let confirmLowerCase;
+let confirmNumericChar;
+let confirmPunctuationChar;
+
+  // function to get password options
+  function getPasswordOptions() {
+    promptPasswordLenght =  prompt("What is your preferred password lenght?");
+    confirmUpperCase = confirm("Would you like your password to include uppercase characters?");
+    confirmLowerCase = confirm("Would you like your password to include lowercase characters?");
+    confirmNumericChar = confirm("Would you like your password to include numeric characters?");
+    confirmPunctuationChar = confirm("Would you like your password to include punctuation characters?");
+  }
   
