@@ -105,7 +105,7 @@ function getPasswordOptions() {
         preferNumericChar = confirm("Would you like your password to include numeric characters?");
         preferSpecialChar = confirm("Would you like your password to include punctuation characters?");
     } else {
-        
+        alert("Invalid password lenght! Value must be from 8 - 128 !");
         getPasswordOptions();
     }
 
