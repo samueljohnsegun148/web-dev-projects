@@ -5,26 +5,30 @@
         <meta charset="UTF-8">
         <meta name="viewpoint" content="width=device-width intial-scale=1.0">
         <title>Password Generator</title>
-        <link rel="stylesheet=" href="./style.css">
+        <link rel="stylesheet" href="./style.css">
     </head>
     <body>
-        <header>
-            <h1>Password Generator</h1>
-        </header>
-        <div class="card">
-            <div class="card-header">
-                <h2> Generate a Password</h2>
-                <textarea 
-                readonly
-                id="password"
-                placeholder="Your secure password"
-                aria-label="Generated Password"
-                ></textarea>
-            </div>
-            <div class="card-footer">
-                <button class="btn" id="generate">Generate Password</button>
-            </div>
+    <div class="wrapper">
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
         </div>
-        <script> scr="./script.js"</script>
-    </body>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+        <div class="card-footer">
+          <button id="generate" class="btn">Generate Password</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>
