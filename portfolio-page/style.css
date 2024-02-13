@@ -111,7 +111,7 @@ img {
     background-image: url("./img/background-image2.jpg");
     background-repeat: repeat;
 }
-.new-projects > p {
+.new-projects > p, a {
     background-color: var(--mycolor);
     width:120px; 
     
