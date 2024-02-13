@@ -93,13 +93,22 @@ let confirmUpperCase
 let confirmLowerCase;
 let confirmNumericChar;
 let confirmPunctuationChar;
+let randomValue;
 
   // function to get password options
   function getPasswordOptions() {
-    promptPasswordLenght =  prompt("What is your preferred password lenght?");
+    promptPasswordLenght =  window.prompt("What is your preferred password lenght?");
     confirmUpperCase = confirm("Would you like your password to include uppercase characters?");
     confirmLowerCase = confirm("Would you like your password to include lowercase characters?");
     confirmNumericChar = confirm("Would you like your password to include numeric characters?");
     confirmPunctuationChar = confirm("Would you like your password to include punctuation characters?");
   }
-  
+
+  // function to get random number
+ function getRandom(arr){
+    randomValue = Math.floor(Math.random() * (arr.length - 1));
+    return randomValue;
+ }
+
+
+ 
