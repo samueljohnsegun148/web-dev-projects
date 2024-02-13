@@ -1,0 +1,193 @@
+/* Mobile responsiveness section */
+@media screen and (min-width: 320px) and (max-width: 480px){
+    /* mobile devices */
+    body {
+        background-color: tan;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    /* small ipads and small android tablets */
+    body {
+        background-color: teal;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    /* laptops and and small screens */
+    body {
+        background-color: orange;
+    }
+    h1, h2{
+        text-align: center;
+        color: green;
+    }
+    ul,li {
+        text-align: center;
+        color: white;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+    /* large screens and desktops */
+    body {
+        background-color: green;
+    }
+}
+
+@media screen and (min-width: 1201px) and (orientation: landscape){
+    /* large LCD screens and beyond */
+    body {
+        background-color: magenta;
+    }
+}
+
+
+:root {
+    --mycolor: lightblue;  
+}
+
+.flex-container {
+    display: flex;
+    background-color: rgb(15, 15, 20);
+    gap: 500px;
+}
+.nav-bar {
+    background-color: rgb(15, 15, 20);
+    font-size: 24;
+    display: flex;
+}
+
+.nav-bar > li {
+    margin: 10px;
+    text-align: right;    
+}
+
+body {
+    background-color: lightgoldenrodyellow;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+.bottom-position {
+    position: relative;
+    bottom: 100px;
+    left: 900px;
+    color: red;
+}
+
+#about-me {
+    display:flex;
+    padding-left: 2px;
+    margin-bottom: 30px;
+}
+
+.aboutme-vertical-border {
+    border-right: 2px solid rgb(116, 114, 114);
+    height: 80px;
+    position: absolute;
+    left: 0%;
+    padding-right:20px;
+    padding-left: 50px;
+}
+.mywork-vertical-border {
+    border-right: 2px solid rgb(116, 114, 114);
+    height: 400px;
+    position: absolute;
+    left: 0%;
+    padding-right: 64px;
+    padding-left: 50px;  
+}
+
+.work-flex-container {
+    display: flex;
+}
+.new-projects {
+    padding-top: 100px; 
+    padding-bottom: 100px; 
+    border: 2px solid lightblue; 
+    margin-bottom: 4px;
+    background-image: url("./img/background-image2.jpg");
+    background-repeat: repeat;
+}
+.new-projects > p, a {
+    background-color: var(--mycolor);
+    width:120px; 
+    
+}
+
+.work-flex-item-container {
+    padding-left: 200px;  
+}
+
+.work-flex-item-subcontainer {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid green;
+    margin-bottom: 4px;
+    background-image: url("./img/background-image2.jpg");
+    background-repeat: repeat;
+    gap: 440px;
+    padding-right: 450px;  
+  
+
+  
+}
+.project {
+    text-wrap: nowrap;
+    background-color: white;  
+    border-right: 2px solid red;
+      
+}
+/*
+#my-work {
+  display: grid;  
+  grid-template-columns: auto auto;
+  background-color: rgb(223, 216, 216);
+  background-image: url("./img/background-image2.jpg");
+  background-repeat: repeat;
+  margin-bottom: 30px;
+  padding-top: 50px;
+  border: 4px solid lightblue;  
+}
+
+.project { 
+    border: 4px solid var(--mycolor);
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+*/
+.project > p {
+    background-color: var(--mycolor);
+    width:120px; 
+}
+ 
+
+
+#my-contact {
+   display: flex;
+   font-size: large;
+   font-weight: bolder;   
+  }
+
+  .mycontact-vertical-border {
+    border-right: 2px solid rgb(116, 114, 114);
+    height: 60px;
+    position: absolute;
+    left: 0%;
+    padding-right:44px;
+    padding-left: 50px;
+}
+
+  .list-item {
+    margin-right: 40px;
+  }
+
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+ 

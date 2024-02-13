@@ -1,4 +1,5 @@
-# web-dev-projects
+# Project Tittle
+## Porfolio Web page
 
 ## LICENSE
 MIT License
@@ -23,9 +24,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-## Projects Description
-This web page is the default home page for all the projects undertaken. It contains links to all the respective projects and when you select each one, you would be automatically directed.
-
+## Project Description
+This web app displays a portfolio for a user. All the projects done so far can be viewed by clicking each, and you would be taking to the
+respective page.
 
 ## Links
 'This site is built using [GitHub Pages](https://samueljohnsegun148.github.io/web-dev-projects/).'
