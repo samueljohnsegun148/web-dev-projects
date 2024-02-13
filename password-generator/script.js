@@ -154,10 +154,10 @@ function writePassword() {
     passwordText.value = generatedPassword;
 }
 
-
-
 // add event listener to generate button
 generateBtn.addEventListener('click', writePassword())
+
+
 
 
 
