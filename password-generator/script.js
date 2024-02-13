@@ -95,8 +95,6 @@ let preferNumericChar;
 let preferSpecialChar;
 let randomValue;
 
-
-
 // function to get password options
 function getPasswordOptions() {
     promptPasswordLenght =  prompt("What is your preferred password lenght?");
@@ -110,7 +108,7 @@ function getPasswordOptions() {
         getPasswordOptions();
     }
 
-    // check if at least one character type is selected
+    // check if at least one character type is selected, else prompt the user to select at least a char type
     if (!(preferUpperCase || preferLowerCase || preferNumericChar || preferSpecialChar)) {
         alert("Your password must include at least one of the four character types!");
         getPasswordOptions();
@@ -145,20 +143,22 @@ function generatePassword () {
 }
 
 // give reference to the #generate button element
-var generateBtn = document.querySelector("#generate");
+var generateBtn = document.querySelector('#generate');
 
 // Write password to the #password input
 function writePassword() {
-    var generatedPassword = generatePassword ();
-    var passwordText = document.querySelector("#password");
+    var generatedPassword = generatePassword();
+    var passwordText = document.querySelector('#password');
     passwordText.value = generatedPassword;
 }
 
 // add event listener to generate button
-generateBtn.addEventListener('click', writePassword())
+generateBtn.addEventListener('click', writePassword)
 
 
 
 
 
- 
+
+
+
