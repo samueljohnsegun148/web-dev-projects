@@ -128,7 +128,7 @@ img {
     margin-bottom: 4px;
     background-image: url("./img/background-image2.jpg");
     background-repeat: repeat;
-    gap: 440px;
+    gap: 100%;
     padding-right: 450px;  
   
 
