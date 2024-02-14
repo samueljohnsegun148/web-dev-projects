@@ -73,7 +73,7 @@ img {
 .bottom-position {
     position: relative;
     bottom: 100px;
-    left: 900px;
+    left: 80%;
     color: red;
 }
 
